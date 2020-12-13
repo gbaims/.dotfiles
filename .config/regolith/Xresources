@@ -1,0 +1,7 @@
+! Fonts
+gnome.terminal.font: Fira Mono Medium 12
+i3xrocks.value.font: Fira Mono Medium 13
+i3-wm.font: pango:Fira Mono Medium 13
+i3-wm.bar.font: pango:Fira Mono Medium 13, Material Design Icons 13
+rofi.font: Fira Sans Book 16
+St.font: Fira Mono Medium:pixelsize=12:antialias=true:autohint=true
