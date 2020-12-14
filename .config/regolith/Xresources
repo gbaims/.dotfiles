@@ -1,3 +1,6 @@
+! Interface
+gnome.wallpaper: ~/.local/share/backgrounds/2020-12-14-01-01-17-bulldog-wallpaper.jpg
+
 ! Fonts
 gnome.terminal.font: Fira Mono Medium 12
 i3xrocks.value.font: Fira Mono Medium 13
