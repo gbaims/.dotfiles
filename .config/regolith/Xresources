@@ -5,3 +5,8 @@ i3-wm.font: pango:Fira Mono Medium 13
 i3-wm.bar.font: pango:Fira Mono Medium 13, Material Design Icons 13
 rofi.font: Fira Sans Book 16
 St.font: Fira Mono Medium:pixelsize=12:antialias=true:autohint=true
+
+! Additional Fonts
+additional.gnome.interface.font: Fira Sans Regular 11
+additional.gnome.interface.document-font: Fira Sans Regular 11
+additional.gnome.interface.monospace-font: Fira Mono Medium 13
