@@ -1,6 +1,15 @@
 {
-    "workbench.colorTheme": "Dracula",
+    "diffEditor.renderSideBySide": false,
     "editor.fontFamily": "Fira Code",
     "editor.fontLigatures": true,
-    "editor.fontWeight": "500"
+    "editor.fontWeight": "500",
+    "editor.lineNumbers": "relative",
+    "editor.minimap.enabled": false,
+    "workbench.colorTheme": "Dracula",
+    "workbench.editor.showTabs": false,
+    "workbench.editor.limit.enabled": true,
+    "workbench.editor.limit.perEditorGroup": true,
+    "workbench.editor.limit.value": 1,
+    "workbench.panel.defaultLocation": "right",
+    "workbench.sideBar.location": "right",
 }
