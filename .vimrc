@@ -39,3 +39,24 @@ set smartcase                                     " ... unless they contain at l
 
 " Splits and Tabs
 set splitbelow                                    " New windows below
+
+
+" Plugins
+if empty(glob('~/.vim/autoload/plug.vim'))
+  silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
+    \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+  autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
+endif
+
+call plug#begin('~/.vim/plugged')
+Plug 'dracula/vim', { 'as': 'dracula' }
+Plug 'itchyny/lightline.vim'
+call plug#end()
+
+" Colorscheme
+set termguicolors
+colorscheme dracula
+
+" Lightline
+set noshowmode
+let g:lightline = { 'colorscheme': 'darcula' }
