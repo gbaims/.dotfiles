@@ -3,6 +3,7 @@
     "editor.fontFamily": "Fira Code",
     "editor.fontLigatures": true,
     "editor.fontWeight": "500",
+    "editor.formatOnSave": true,
     "editor.lineNumbers": "relative",
     "editor.minimap.enabled": false,
     "workbench.colorTheme": "Dracula",
