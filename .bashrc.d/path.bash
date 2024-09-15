@@ -1,6 +1,16 @@
 # User specific environment
-if ! [[ "$PATH" =~ "$HOME/.local/bin:$HOME/bin:" ]]; then
-  PATH="$HOME/.local/bin:$HOME/bin:$PATH"
+if [ -d "$HOME/.local/bin" ]; then
+  case ":${PATH}:" in
+  *:"$HOME/.local/bin":*) ;;
+  *) PATH="$HOME/.local/bin:$PATH" ;;
+  esac
+fi
+
+if [ -d "$HOME/bin" ]; then
+  case ":${PATH}:" in
+  *:"$HOME/bin":*) ;;
+  *) PATH="$HOME/bin:$PATH" ;;
+  esac
 fi
 
 # rust
