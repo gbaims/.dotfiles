@@ -1,4 +1,5 @@
 return {
+  -- Added rounded border directly to lazy.lua also, since it can't be overriden after initialization
   { "williamboman/mason.nvim", opts = { ui = { border = "rounded" } } },
   { "folke/noice.nvim", opts = { presets = { lsp_doc_border = true } } },
   { "neovim/nvim-lspconfig", opts = { diagnostics = { float = { border = "rounded" } } } },
