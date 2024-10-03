@@ -13,6 +13,15 @@ if [ -d "$HOME/bin" ]; then
   esac
 fi
 
+# dotnet
+export DOTNET_ROOT="$HOME/.dotnet"
+if [ -d $DOTNET_ROOT ]; then
+  case ":${PATH}:" in
+  *:"$DOTNET_ROOT":*) ;;
+  *) PATH="$DOTNET_ROOT:$DOTNET_ROOT/tools:$PATH" ;;
+  esac
+fi
+
 # rust
 export CARGO_HOME="$HOME/.cargo"
 if [ -d $CARGO_HOME ]; then
