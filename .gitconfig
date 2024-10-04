@@ -3,3 +3,5 @@
 	name = Gabriel Baims
 [init]
 	defaultBranch = main
+[core]
+	autocrlf = input
