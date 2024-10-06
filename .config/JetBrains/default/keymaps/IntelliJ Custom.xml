@@ -11,6 +11,7 @@
   <action id="EditorDown">
     <keyboard-shortcut first-keystroke="down" />
     <keyboard-shortcut first-keystroke="j" />
+    <keyboard-shortcut first-keystroke="ctrl n" />
   </action>
   <action id="EditorLeft">
     <keyboard-shortcut first-keystroke="left" />
@@ -23,6 +24,7 @@
   <action id="EditorUp">
     <keyboard-shortcut first-keystroke="up" />
     <keyboard-shortcut first-keystroke="k" />
+    <keyboard-shortcut first-keystroke="ctrl p" />
   </action>
   <action id="FocusEditor">
     <keyboard-shortcut first-keystroke="escape" />
@@ -39,6 +41,7 @@
   <action id="NextTab">
     <keyboard-shortcut first-keystroke="alt right" />
     <keyboard-shortcut first-keystroke="alt e" />
+    <keyboard-shortcut first-keystroke="close_bracket" second-keystroke="b" />
   </action>
   <action id="OpenInRightSplit">
     <keyboard-shortcut first-keystroke="shift enter" />
@@ -48,6 +51,7 @@
   <action id="PreviousTab">
     <keyboard-shortcut first-keystroke="alt left" />
     <keyboard-shortcut first-keystroke="alt q" />
+    <keyboard-shortcut first-keystroke="open_bracket" second-keystroke="b" />
   </action>
   <action id="SplitVertically">
     <keyboard-shortcut first-keystroke="alt back_slash" />
