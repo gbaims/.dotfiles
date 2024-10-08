@@ -1,4 +1,5 @@
 *.local
 !*.local/
+state.json
 
 lazy-lock.json
