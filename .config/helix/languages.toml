@@ -1,0 +1,23 @@
+# Typescript
+[[language]]
+name = "typescript"
+roots = ["deno.json", "deno.jsonc", "package.json", "tsconfig.json"]
+language-servers = ["deno-lsp"]
+auto-format = true
+
+[language-server.deno-lsp]
+required-root-patterns = ["deno.json"]
+command = "deno"
+args = ["lsp"]
+
+[language-server.deno-lsp.config.deno]
+enable = true
+cacheOnSave = true
+inlayHints.enumMemberValues.enabled = true
+inlayHints.functionLikeReturnTypes.enabled = true
+inlayHints.parameterNames.enabled = "all"
+inlayHints.parameterNames.suppressWhenArgumentMatchesName = false
+inlayHints.parameterTypes.enabled = true
+inlayHints.propertyDeclarationTypes.enabled  = true
+inlayHints.variableTypes.enabled = true
+inlayHints.variableTypes.suppressWhenTypeMatchesName = false
