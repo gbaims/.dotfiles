@@ -1,0 +1,1 @@
+command -v hx >/dev/null && export EDITOR="$(command -v hx)"
