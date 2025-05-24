@@ -1,0 +1,4 @@
+theme = 'rose_pine'
+
+[editor.file-picker]
+hidden = false
