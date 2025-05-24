@@ -1,4 +1,36 @@
-theme = 'rose_pine_minimal'
+theme = "rose_pine_minimal"
+
+# Options
+[editor]
+line-number = "relative"
+popup-border = "all"
+end-of-line-diagnostics = "hint"
+
+[editor.inline-diagnostics]
+cursor-line = "warning"
+other-lines = "disable"
+
+[editor.gutters.line-numbers]
+min-width = 1
+
+[editor.cursor-shape]
+normal = "block"
+insert = "bar"
+select = "underline"
 
 [editor.file-picker]
 hidden = false
+
+[editor.indent-guides]
+render = true
+character = "▏"
+
+[editor.statusline]
+mode.normal = "NORMAL"
+mode.insert = "INSERT"
+mode.select = "SELECT"
+
+# Mapping
+[keys.normal]
+"C-h" = ":toggle lsp.display-inlay-hints"
+"C-g" = [":new", ":insert-output lazygit", ":buffer-close!", ":redraw", ":reload"]
