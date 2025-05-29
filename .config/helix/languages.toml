@@ -1,10 +1,9 @@
-# Typescript
-[[language]]
-name = "typescript"
-roots = ["deno.json", "deno.jsonc", "package.json", "tsconfig.json"]
-language-servers = ["deno-lsp"]
-auto-format = true
+##################################
+#         LANGUAGE SERVERS       #
+##################################
 
+
+# Deno
 [language-server.deno-lsp]
 required-root-patterns = ["deno.json"]
 command = "deno"
@@ -21,3 +20,28 @@ inlayHints.parameterTypes.enabled = true
 inlayHints.propertyDeclarationTypes.enabled  = true
 inlayHints.variableTypes.enabled = true
 inlayHints.variableTypes.suppressWhenTypeMatchesName = false
+
+
+##################################
+#           LANGUAGES            #
+##################################
+
+
+# JSON
+[[language]]
+name = "json"
+formatter = { command = 'deno', args = ["fmt", "-", "--ext", "json" ] }
+auto-format = true
+
+[[language]]
+name = "jsonc"
+formatter = { command = 'deno', args = ["fmt", "-", "--ext", "jsonc" ] }
+auto-format = true
+
+
+# Typescript
+[[language]]
+name = "typescript"
+roots = ["deno.json", "deno.jsonc", "package.json", "tsconfig.json"]
+language-servers = ["deno-lsp"]
+auto-format = true
