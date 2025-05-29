@@ -11,3 +11,5 @@ font-style = Medium
 font-style-bold = Bold
 font-style-italic = Italic
 font-style-bold-italic = Bold Italic
+
+keybind = alt+w=close_tab

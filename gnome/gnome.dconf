@@ -9,6 +9,9 @@ profile-uuids=['4a791accf86723cc93ff878b683310d6']
 cell-height-scale=1.2000000000000002
 palette='Rosé Pine'
 
+[org/gnome/Ptyxis/Shortcuts]
+close-tab='<Alt>w'
+
 [org/gnome/desktop/calendar]
 show-weekdate=true
 
