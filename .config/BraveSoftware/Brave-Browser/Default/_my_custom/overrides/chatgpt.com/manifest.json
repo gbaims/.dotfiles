@@ -1,0 +1,9 @@
+{
+  "name": "ChatGPT",
+  "short_name": "ChatGPT",
+  "display": "standalone",
+  "start_url": "/",
+  "scope": "/",
+  "related_applications": [],
+  "shortcuts": []
+}

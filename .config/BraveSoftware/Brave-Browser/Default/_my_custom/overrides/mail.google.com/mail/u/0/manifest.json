@@ -1,0 +1,12 @@
+{
+  "name": "Gmail Red",
+  "short_name": "Gmail Red",
+  "background_color": "#FFFFFF",
+  "display": "standalone",
+  "start_url": "/mail/u/0/",
+  "scope": "/mail/u/0/",
+  "theme_color": "#FFFFFF",
+  "related_applications": [],
+  "shortcuts": [],
+  "icons": [{ "src": "favicon-red.png" }]
+}

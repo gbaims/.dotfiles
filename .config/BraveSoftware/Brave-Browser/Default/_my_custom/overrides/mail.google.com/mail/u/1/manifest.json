@@ -1,0 +1,12 @@
+{
+  "name": "Gmail Blue",
+  "short_name": "Gmail Blue",
+  "background_color": "#FFFFFF",
+  "display": "standalone",
+  "start_url": "/mail/u/1/",
+  "scope": "/mail/u/1/",
+  "theme_color": "#FFFFFF",
+  "related_applications": [],
+  "shortcuts": [],
+  "icons": [{ "src": "favicon-blue.png" }]
+}
