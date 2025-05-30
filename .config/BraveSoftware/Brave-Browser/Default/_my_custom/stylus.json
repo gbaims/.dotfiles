@@ -1,0 +1,43 @@
+[
+  {
+    "settings": {},
+    "order": {
+      "main": [],
+      "prio": []
+    }
+  },
+  {
+    "enabled": true,
+    "installDate": 1748194406796,
+    "name": "app.todoist.com",
+    "sections": [
+      {
+        "code": "body {\n    font-family: system-ui;\n}\n\n/* List View */\n\n/* Put task content and meta on same line */\n.task_list_item .task_list_item__content {\n    display: flex;\n    justify-content: space-between;\n}\n\n/* Remove subtasks, projects, comments and reminders info from list view\n- span: subtasks, projects\n- a: comments, reminders\n- button: due date*/\n.task_list_item .task_list_item__content > div:nth-child(2) > *:not(button) {\n    display: none;\n}\n\n/* Task content should not show in more than one line */ \n.task_list_item .task_list_item__content .task_list_item__content__wrapper .task_content {\n    -webkit-line-clamp: 1;\n}\n\n/* Remove task description */\n.task_list_item .task_list_item__content .task_list_item__content__wrapper .task_description {\n    display: none;\n}",
+        "domains": [
+          "app.todoist.com"
+        ]
+      }
+    ],
+    "updateDate": 1748353728987,
+    "_id": "4cc22543-992d-4275-93a5-ed84c49615c7",
+    "_rev": 1748618424250,
+    "id": 1
+  },
+  {
+    "enabled": true,
+    "installDate": 1748182427568,
+    "name": "web.whatsapp.com",
+    "sections": [
+      {
+        "code": "body {\n    font-family: system-ui;\n}",
+        "domains": [
+          "web.whatsapp.com"
+        ]
+      }
+    ],
+    "updateDate": 1748189717184,
+    "_id": "5ada754e-38e8-44d9-9096-df17ee7b9363",
+    "_rev": 1748618120942,
+    "id": 2
+  }
+]
