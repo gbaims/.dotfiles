@@ -32,5 +32,6 @@ mode.select = "SELECT"
 
 # Mapping
 [keys.normal]
-"C-h" = ":toggle lsp.display-inlay-hints"
-"C-g" = [":new", ":insert-output lazygit", ":buffer-close!", ":redraw", ":reload"]
+C-h = ":toggle lsp.display-inlay-hints"
+C-g = [ ":write-all", ":insert-output lazygit >/dev/tty", ":redraw", ":reload-all" ]
+
