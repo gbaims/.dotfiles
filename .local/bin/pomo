@@ -1,0 +1,6 @@
+#!/usr/bin/bash
+
+mins="${1:-25}"
+termdown "${mins}m" \
+	&& playerctl --all-players pause \
+	&& paplay /usr/share/sounds/freedesktop/stereo/alarm-clock-elapsed.oga
