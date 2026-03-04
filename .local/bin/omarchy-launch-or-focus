@@ -10,10 +10,26 @@ fi
 
 WINDOW_PATTERN="$1"
 LAUNCH_COMMAND="${2:-"uwsm-app -- $WINDOW_PATTERN"}"
-WINDOW_ADDRESS=$(hyprctl clients -j | jq -r --arg p "$WINDOW_PATTERN" '.[]|select((.class|test("\\b" + $p + "\\b";"i")) or (.title|test("\\b" + $p + "\\b";"i")))|.address' | head -n1)
 
-if [[ -n $WINDOW_ADDRESS ]]; then
-  hyprctl dispatch focuswindow "address:$WINDOW_ADDRESS"
+WINDOW_JSON=$(hyprctl clients -j | jq -r --arg p "$WINDOW_PATTERN" '
+  map(
+    select(
+      (.class|test("\\b" + $p + "\\b";"i")) or
+      (.title|test("\\b" + $p + "\\b";"i"))
+    )
+  ) | first
+')
+
+if [[ "$WINDOW_JSON" != "null" && -n "$WINDOW_JSON" ]]; then
+  WINDOW_ADDRESS=$(echo "$WINDOW_JSON" | jq -r '.address')
+  WORKSPACE_NAME=$(echo "$WINDOW_JSON" | jq -r '.workspace.name')
+
+  if [[ "$WORKSPACE_NAME" == special:* ]]; then
+    SPECIAL_NAME="${WORKSPACE_NAME#special:}"
+    hyprctl dispatch togglespecialworkspace "$SPECIAL_NAME"
+  else
+    hyprctl dispatch focuswindow "address:$WINDOW_ADDRESS"
+  fi
 else
   eval exec setsid $LAUNCH_COMMAND
 fi
