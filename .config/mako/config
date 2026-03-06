@@ -1,0 +1,5 @@
+# Default configuration file is a symlink to current omarchy theme
+# So, this file needs to be added to default configuration file.
+include=~/.config/mako/omarchy-config
+
+anchor=bottom-right
